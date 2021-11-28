@@ -41,6 +41,11 @@ to do this execute the following command:
 
 ng serve
 
+if ng serve gives an error:
+An unhandled exception occurred: Cannot find module '@angular-devkit/build-angular/package.json'
+
+run "npm install" to install the package first then do "ng serve"
+
 ng serve will build and compile the application
 once it is done note the last line before the "compiled successfully" it shows where to launch the application:
 for example for me it was : 
