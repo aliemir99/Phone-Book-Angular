@@ -1,0 +1,12 @@
+<app-add-contact
+    (onAddContact)="addContact($event)">
+</app-add-contact>
+<app-search-contact
+    (onSearchContacts)="onFilterContacts($event)">
+</app-search-contact>
+<app-contact-item 
+*ngFor="let contact of contactsViewModel" 
+[contact]="contact"
+(onDeleteContact)="deleteContact(contact)"
+(onToggleFavourite)="toggleFavourite(contact)"> 
+</app-contact-item>

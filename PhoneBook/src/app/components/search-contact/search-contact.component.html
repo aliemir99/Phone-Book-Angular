@@ -1,0 +1,10 @@
+<form class="add-form" (ngSubmit)="onSearch()">
+
+    <div class="form-control">
+        <label for="filter">Search</label>
+        <input onChange="onSearch()" type="text" name="filter" [(ngModel)]="filter" id="filter" placeholder="Search Name or Phone"/>
+    </div>
+
+    <input type="submit"value="Search Contact" class="btn btn-block"/>
+
+</form>

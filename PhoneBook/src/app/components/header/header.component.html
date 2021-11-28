@@ -1,0 +1,15 @@
+<header>
+    <fa-icon 
+    class ="icon"
+    (click)="refreshPage()" 
+    [ngStyle]="{'color': 'green'}" 
+    [icon]="faPhone">
+   </fa-icon>
+<h1 *ngIf="hasRoute('/')">{{title}}</h1>
+<app-button 
+*ngIf="hasRoute('/')" 
+color= "{{showAddContact ? 'red' : 'green'}}" 
+text = "{{showAddContact ? 'Close' : 'Add'}}" 
+(btnClick)="toggleAddContact()">
+</app-button>
+</header>

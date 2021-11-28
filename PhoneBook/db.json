@@ -1,0 +1,18 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Abbas",
+      "lastname": "Khader",
+      "phone": "5065329876",
+      "favourite": false
+    },
+    {
+      "name": "Ali",
+      "lastname": "Abdelaziz",
+      "phone": "5463744",
+      "favourite": true,
+      "id": 2
+    }
+  ]
+}
