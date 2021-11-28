@@ -10,27 +10,39 @@ To have the json server work first you will need to download the repository,
 and then locate to powershell:
 
 If you haven't already first you will need to set the execution policy to give yourself rights to download packages
+
   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 Then you will need to install angular CLI if it isn't installed already
 You can do this through the Terminal in VS code
+
   npm install -g @angular/cli
+  
+ navigate to application folder and execute 
+   code .
+ 
+ which will launch VS Code with the application.
 
 Install Json server
+
   npm install -g json-server
 
 to run the local instance of the server execute
+
   npm run server
 make sure the execution of this command shows 
+
   json-server --watch db.json --port 5000
+
 on the second line
 
 once the local instance of the json server is running, you will need to serve the application
 to do this execute the following command:
+
 ng serve
 
 ng serve will build and compile the application
-once it is done note the last line before the compiled successfully it shows where to launch the application:
+once it is done note the last line before the "compiled successfully" it shows where to launch the application:
 for example for me it was : 
 http://localhost:4200/
 
